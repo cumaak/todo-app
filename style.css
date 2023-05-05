@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(to right, purple, tomato);
+}
+body .form {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+body .form input {
+  width: 50rem;
+  height: 5rem;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+body .form input::-moz-placeholder {
+  font-size: 2rem;
+}
+body .form input::placeholder {
+  font-size: 2rem;
+}
+body .form button {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: 3rem;
+  background-color: white;
+  color: rgb(83, 83, 254);
+  transition: 0.5s ease all;
+}
+body .form button:hover {
+  color: white;
+  background-color: rgb(83, 83, 255);
+}
+body .select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  height: 4rem;
+}
+body .select button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+body .select button:hover {
+  width: 11rem;
+  height: 4rem;
+  background-color: cornflowerblue;
+}
+body .todo-container {
+  min-width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+body .todo-container ul {
+  min-width: 30%;
+}
+body .todo-container ul li {
+  margin: 1rem 0;
+  height: 5rem;
+  border-radius: 3rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+body .todo-container ul li .check {
+  background-color: lightgreen;
+  height: 100%;
+  width: 5rem;
+  font-size: 2.4rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+body .todo-container ul li .check i {
+  pointer-events: none;
+}
+body .todo-container ul li p {
+  padding: 1rem;
+  font-size: 2.4rem;
+}
+body .todo-container ul li .done {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+body .todo-container ul li .trash {
+  background-color: red;
+  height: 100%;
+  width: 5rem;
+  font-size: 2.4rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+body .todo-container ul li .trash i {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 8px;
+  }
+  body .form input {
+    width: 35rem;
+  }
+  body .todo-container ul li {
+    min-width: 30rem;
+  }
+}/*# sourceMappingURL=style.css.map */
